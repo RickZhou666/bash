@@ -44,6 +44,11 @@ $ sudo apt-get install redis-tools
 
 # II. connect to redis server
 $ sudo redis-cli -h 127.0.0.1 -p 6379
+
+
+# add env variable
+$ export AIRFLOW_HOME=~/git/airflow
+$ echo $AIRFLOW_HOME
 ```
 
 ### 1.2 mount new add disk in gcp instances
