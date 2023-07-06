@@ -30,6 +30,17 @@ $ last -10
 # list file detail order by size
 $ ls -lahS
 
+# list ports are listening
+# https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/
+sudo netstat -tulpn | grep LISTEN
+
+# install redis-cli in ubuntu
+# I. install redis cli
+# https://stackoverflow.com/a/25909402/7163137
+$ sudo apt-get install redis-tools
+
+# II. connect to redis server
+$ sudo redis-cli -h 127.0.0.1 -p 6379
 ```
 
 ### 1.2 mount new add disk in gcp instances
