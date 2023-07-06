@@ -83,3 +83,23 @@ $ cat /etc/fstab
 
 ############################################ mount new blank disk end ############################################
 ```
+
+### 1.3 run command in remote server even after logout
+```bash
+https://stackoverflow.com/a/57293088/7163137
+
+# 1. ssh into server
+
+# 2. open screen session by
+$ screen -S sessionname
+
+# 3. Now run your command (background/foreground both works)
+$ mysql -h127.0.0.1 -uroot -pauditrecon audit < /mnt/disks/mysql/audit_backup.sql
+
+
+# 4. now detach to your session by command ctrl+a then press d.
+# 5. Now shut your pc and enjoy
+# 6. now come back ssh into server then use command screen -x sessionname to reconnect the detached session.
+```
+
+
