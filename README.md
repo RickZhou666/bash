@@ -32,7 +32,10 @@ $ ls -lahS
 
 # list ports are listening
 # https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/
-sudo netstat -tulpn | grep LISTEN
+$ sudo netstat -tulpn | grep LISTEN
+# on mac
+# https://stackoverflow.com/a/4421674/7163137
+$ lsof -i -P | grep LISTEN | grep :$PORT
 
 # install redis-cli in ubuntu
 # I. install redis cli
