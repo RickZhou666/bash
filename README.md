@@ -102,4 +102,13 @@ $ mysql -h127.0.0.1 -uroot -pauditrecon audit < /mnt/disks/mysql/audit_backup.sq
 # 6. now come back ssh into server then use command screen -x sessionname to reconnect the detached session.
 ```
 
+### 1.4 zip and unzip
+```bash
+$ sudo apt-get install zip -y
+$ zip -r grafana_setup.zip grafana
+$ scp -r runzhou@10.183.161.137:/home/runzhou/grafana_setup.zip  /Users/runzhou/git/argus/gcp_migration/dev52-test-apps-argus/00_DEBUG/20230712_477_upload_script
+$ chown -R root:root grafana_setup.zip
+$ mv /home/runzhou/rabbitmq.zip /var/cleodaemon
+$ unzip rabbitmq.zip
+```
 
