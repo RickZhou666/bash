@@ -112,3 +112,11 @@ $ mv /home/runzhou/rabbitmq.zip /var/cleodaemon
 $ unzip rabbitmq.zip
 ```
 
+### 1.5 get date from timestamp
+this will display current machine time
+```bash
+$ date -r 1688536800
+>> Wed Jul  5 14:00:00 CST 2023
+
+```
+
