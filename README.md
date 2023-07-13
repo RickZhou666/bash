@@ -117,6 +117,14 @@ this will display current machine time
 ```bash
 $ date -r 1688536800
 >> Wed Jul  5 14:00:00 CST 2023
-
 ```
 
+
+### 1.6 restart nginx
+https://www.cyberciti.biz/faq/nginx-restart-ubuntu-linux-command/
+```bash
+$ sudo systemctl restart nginx
+
+$ sudo service nginx restart
+
+```
