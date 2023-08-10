@@ -68,6 +68,10 @@ $ apt-get update
 $ apt-get install vim -y
 
 $ chmod +x calpig_replace
+
+
+$ ls -lahS | grep calpig
+$ mv calpig_origin calpig
 ```
 
 ### 1.2 mount new add disk in gcp instances
