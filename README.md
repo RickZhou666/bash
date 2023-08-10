@@ -67,7 +67,7 @@ $ docker exec -u root -it <container> bash
 $ apt-get update
 $ apt-get install vim -y
 
-
+$ chmod +x calpig_replace
 ```
 
 ### 1.2 mount new add disk in gcp instances
