@@ -60,6 +60,14 @@ $ curl -x proxy:port -s -X POST -w "%{http_code}" -o .$$.tmp -H "X-User-ID: $USE
 # exit code 255
 # https://docs.platform.sh/development/ssh/troubleshoot-ssh.html#:~:text=While%20trying%20to%20use%20SSH,problem%20with%20your%20SSH%20connection.
 While trying to use SSH, you may get a response indicating permission is denied. Or if you get an error with a code of 255, it means there’s a problem with your SSH connection.
+
+# into contianer with root access
+# https://stackoverflow.com/a/43043211/7163137
+$ docker exec -u root -it <container> bash
+$ apt-get update
+$ apt-get install vim -y
+
+
 ```
 
 ### 1.2 mount new add disk in gcp instances
