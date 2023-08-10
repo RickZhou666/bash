@@ -51,6 +51,15 @@ $ export AIRFLOW_HOME=~/git/airflow
 $ echo $AIRFLOW_HOME
 # unset variable
 $ unset AIRFLOW_HOME
+
+
+# add proxy
+$ curl -x proxy:port -s -X POST -w "%{http_code}" -o .$$.tmp -H "X-User-ID: $USERID" -H "X-KM-APP-CONTEXT: $PIG_APP_CONTEXT" "$OND_REPORTS_ENDPOINT/pig-job/$1/aggregate"
+
+
+# exit code 255
+# https://docs.platform.sh/development/ssh/troubleshoot-ssh.html#:~:text=While%20trying%20to%20use%20SSH,problem%20with%20your%20SSH%20connection.
+While trying to use SSH, you may get a response indicating permission is denied. Or if you get an error with a code of 255, it means there’s a problem with your SSH connection.
 ```
 
 ### 1.2 mount new add disk in gcp instances
