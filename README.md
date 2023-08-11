@@ -72,6 +72,9 @@ $ chmod +x calpig_replace
 
 $ ls -lahS | grep calpig
 $ mv calpig_origin calpig
+
+# install docker
+$ apt install docker.io -y
 ```
 
 ### 1.2 mount new add disk in gcp instances
