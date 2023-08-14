@@ -54,7 +54,7 @@ $ unset AIRFLOW_HOME
 
 
 # add proxy
-$ curl -x proxy:port -s -X POST -w "%{http_code}" -o .$$.tmp -H "X-User-ID: $USERID" -H "X-KM-APP-CONTEXT: $PIG_APP_CONTEXT" "$OND_REPORTS_ENDPOINT/pig-job/$1/aggregate"
+$ curl -x http://proxy_url:proxy_port -s -X POST -w "%{http_code}" -o .$$.tmp -H "X-User-ID: $USERID" -H "X-KM-APP-CONTEXT: $PIG_APP_CONTEXT" "$OND_REPORTS_ENDPOINT/pig-job/$1/aggregate"
 
 
 # exit code 255
