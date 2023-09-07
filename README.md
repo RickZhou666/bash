@@ -75,6 +75,9 @@ $ mv calpig_origin calpig
 
 # install docker
 $ apt install docker.io -y
+
+# check cpu detail on mac
+$ sysctl -a | grep machdep.cpu
 ```
 
 ### 1.2 mount new add disk in gcp instances
